@@ -30,7 +30,7 @@ class MdHtml < Formula
 
   test do
     output = shell_output("#{bin}/md-html -v")
-    assert_match "md-html v0.1.0", output
+    assert_match "md-html v#{version}", output
   end
 end
 
