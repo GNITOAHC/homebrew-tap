@@ -13,6 +13,9 @@ class Queue < Formula
     if Hardware::CPU.intel?
       url "https://github.com/GNITOAHC/md-html/releases/download/v#{version}/queue-v#{version}-linux-amd64.tar.gz"
       sha256 "b585998e616383ff3fef1bb28b6111593594aedd08626abaa52157c629502566" # linux-amd64
+    elsif Hardware::CPU.arm?
+      url "https://github.com/GNITOAHC/md-html/releases/download/v#{version}/queue-v#{version}-linux-arm64.tar.gz"
+      sha256 "0000000000000000000000000000000000000000000000000000000000000000" # linux-arm64
     end
   else
     odie "Unsupported platform."
