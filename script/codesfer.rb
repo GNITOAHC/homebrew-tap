@@ -29,6 +29,10 @@ for asset in release["assets"]
     puts "Skipping asset: #{filename}"
     next
   end
+  if !filename.start_with?("codesfer-")
+    puts "Skipping asset: #{filename}"
+    next
+  end
 
   begin
     response = Net::HTTP.get_response(URI(url))
