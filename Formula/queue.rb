@@ -11,10 +11,10 @@ class Queue < Formula
     end
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/GNITOAHC/md-html/releases/download/v#{version}/queue-v#{version}-linux-amd64.tar.gz"
+      url "https://github.com/GNITOAHC/processq/releases/download/v#{version}/queue-v#{version}-linux-amd64.tar.gz"
       sha256 "d0c73cd48fa2e138d10567cb596230a00c293f92b613adae0c799cec12be5ea2" # linux-amd64
     elsif Hardware::CPU.arm?
-      url "https://github.com/GNITOAHC/md-html/releases/download/v#{version}/queue-v#{version}-linux-arm64.tar.gz"
+      url "https://github.com/GNITOAHC/processq/releases/download/v#{version}/queue-v#{version}-linux-arm64.tar.gz"
       sha256 "570865e39a0fae41ff18e68fc347505eef6151622c153f529d1849dea552d013" # linux-arm64
     end
   else
