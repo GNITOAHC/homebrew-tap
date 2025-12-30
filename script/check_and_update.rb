@@ -13,6 +13,11 @@ FORMULAE = {
     repo: "gnitoahc/processq",
     script: "script/queue.rb",
     file: "Formula/queue.rb"
+  },
+  "codesfer" => {
+    repo: "gnitoahc/codesfer",
+    script: "script/codesfer.rb",
+    file: "Formula/codesfer.rb"
   }
 }
 
