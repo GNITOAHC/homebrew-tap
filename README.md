@@ -13,3 +13,4 @@ brew install gnitoahc/tap/<formulae>
 
 - [md-html](https://github.com/gnitoahc/md-html): A lightweight command line tool to convert Markdown to HTML.
 - [queue](https://github.com/gnitoahc/processq): An simple executable that can submit process to local machine's background.
+- [codesfer](https://github.com/gnitoahc/codesfer): Transfer your files easily.
