@@ -1,5 +1,7 @@
 # GNITOAHC's homebrew-tap
 
+[![Update Formulae](https://github.com/GNITOAHC/homebrew-tap/actions/workflows/update.yml/badge.svg)](https://github.com/GNITOAHC/homebrew-tap/actions/workflows/update.yml)
+
 ## Usage
 
 Add the tap via `brew tap` command then install any formulae from this tap.
