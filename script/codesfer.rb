@@ -25,7 +25,7 @@ for asset in release["assets"]
   filename = asset["name"]
   url = asset["browser_download_url"]
 
-  if !filename.end_with?(".gz")
+  if !filename.end_with?(".tar.gz")
     puts "Skipping asset: #{filename}"
     next
   end
@@ -68,7 +68,7 @@ File.open("Formula/codesfer.rb", "r") do |file|
 
       sha256 = ""
       assets.each do |filename, info|
-        if filename.end_with?("#{indicator}.gz")
+        if filename.end_with?("#{indicator}.tar.gz")
           if assets[filename] == nil
             abort "assets[#{filename}] not found"
           end
