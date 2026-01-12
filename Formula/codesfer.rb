@@ -1,6 +1,6 @@
 class Codesfer < Formula
   desc "Transfer your files easily"
-  homepage "https://github.com/gnitoahc/codesfer"
+  homepage "https://www.codesfer.io"
   license "MIT"
   version "0.1.2"
 
