@@ -2,25 +2,25 @@ class Codesfer < Formula
   desc "Transfer your files easily"
   homepage "https://www.codesfer.io"
   license "MIT"
-  version "0.1.3"
+  version "0.1.4"
 
   # depends_on "go" => :build
 
   if OS.mac?
     if Hardware::CPU.arm?
       url "https://github.com/GNITOAHC/codesfer/releases/download/v#{version}/codesfer-v#{version}-darwin-arm64.tar.gz"
-      sha256 "c418ad297dcac5aa654a9674df8ad952d8b712a154ebce258e934f296cfa97e9" # darwin-arm64
+      sha256 "f60b1006ee4031e8ecacae776a421231dcbf8d4f45a88c924c18a5011df55ec7" # darwin-arm64
     else
       url "https://github.com/GNITOAHC/codesfer/releases/download/v#{version}/codesfer-v#{version}-darwin-amd64.tar.gz"
-      sha256 "255959c21a44851fcce9ec1bd9bcda99e038e3b4a8fb1c561138b01cd0f708af" # darwin-amd64
+      sha256 "5c75e0f73541fe94fa8c255130d472d90bdcd9a88caf51fff9985925101526fe" # darwin-amd64
     end
   elsif OS.linux?
     if Hardware::CPU.intel?
       url "https://github.com/GNITOAHC/codesfer/releases/download/v#{version}/codesfer-v#{version}-linux-amd64.tar.gz"
-      sha256 "23b19b1dda643150248200a09e32544debc4c4950f7d8e0b842d8ed0f637dc8c" # linux-amd64
+      sha256 "f0c4dc71cfcfbe9aec345da74e97d64a59d8f83a2c1ea4c3fdcf7e8bd77dab41" # linux-amd64
     elsif Hardware::CPU.arm?
       url "https://github.com/GNITOAHC/codesfer/releases/download/v#{version}/codesfer-v#{version}-linux-arm64.tar.gz"
-      sha256 "29b5fd25084c564ede8c20cfc044e786ab99a4185aea92aa457f61762f2a34c2" # linux-arm64
+      sha256 "c63e3e90299d0e28b60d65f286640604b415d94ed6e78b6922fc45bd11a3480f" # linux-arm64
     end
   else
     odie "Unsupported platform."
