@@ -2,22 +2,22 @@ class MdHtml < Formula
   desc "Lightweight markdown to html converter"
   homepage "https://github.com/gnitoahc/md-html"
   license "MIT"
-  version "0.2.5"
+  version "0.2.6"
 
   # depends_on "go" => :build
   
   if OS.mac?
     if Hardware::CPU.arm?
       url "https://github.com/GNITOAHC/md-html/releases/download/v#{version}/md-html-v#{version}-darwin-arm64.tar.gz"
-      sha256 "c9aa468d943ef881761a3a55eabcb5d4fca402381b415ae7d5ea2e83cf5d8a65" # darwin-arm64
+      sha256 "c67a77bef015ff5f02f014dd231ea5b70b505d90b54c835e95b4ccc7a931ab52" # darwin-arm64
     else
       url "https://github.com/GNITOAHC/md-html/releases/download/v#{version}/md-html-v#{version}-darwin-amd64.tar.gz"
-      sha256 "2ea3accdba0720d4cf883eb49f072d2b3e15d57970ceb07d50e3876d351f4b3c" # darwin-amd64
+      sha256 "7b48deef43d4afc3cd278ada35e49e5796d44efe2fa738745f14d70001a63da6" # darwin-amd64
     end
   elsif OS.linux?
     if Hardware::CPU.intel?
       url "https://github.com/GNITOAHC/md-html/releases/download/v#{version}/md-html-v#{version}-linux-amd64.tar.gz"
-      sha256 "63caa435955d537d119861290691c82c4f98c4b84e285cfe07ebafadbef292d8" # linux-amd64
+      sha256 "d40c0f97cd5d9c4f966ce4ec7c8c3b5616f607d4f2729a2d0ea664d4f310eab3" # linux-amd64
     end
   else
     odie "Unsupported platform."
